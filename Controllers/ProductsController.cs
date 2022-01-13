@@ -14,10 +14,10 @@ namespace RESTAPI_Northwind.Controllers
         [Route("api/[controller]")]
         [ApiController]
         // # Rakenna tietokannasta malli luokiksi syöttämällä Package Manager Consoleen seuraava rivi.
-        // Tämä toimii paikalliseen tietokantaan:
-        // Scaffold-DbContext "Server=DESKTOP-7V0M0JG\SQLEXPRESS;Database=NorthwindOriginal;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+        // Tämä toimii paikalliseen Microsoft SQL tietokantaan:
+        // Scaffold-DbContext "Server=LOCAL\SQLEXPRESS;Database=Kanta;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
         // Azure-versio:
-        // Scaffold-DbContext "Server=duuniserver.database.windows.net,1433;Database=tuntidb;User ID = sirensimo; Password=salasana;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+        // Scaffold-DbContext "Server=serveri.database.windows.net,1433;Database=tuntidb;User ID = tunnus; Password=salasana;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
 
         public class ProductsController : Controller
         {
